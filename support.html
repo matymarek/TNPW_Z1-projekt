@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podpora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+<nav>
+    <ul class="navbar">
+        <li><a class="navbar" href="index.html">Domů</a></li>
+        <li><a class="navbar" href="downloads.html">Ke stažení</a></li>
+        <li><a class="navbar" href="gallery.html">Fotogalerie</a></li>
+        <li><a class="navbar" href="about.html">O nás</a></li>
+        <li><a class="navbar" href="support.html">Podpora</a></li>
+    </ul>
+</nav>
+<h1>Máte problém s naší aplikací? Napište nám!</h1>
+<p>Pokud při používání naší aplikace narazíte na jakýkoliv problém a nenaleznete ho v <a class="text" href="#faq">častých dotazech</a>,<br>
+    prosíme, sdělte nám ho, ať můžeme co nejdříve začít pracovat na jeho odstranění.</p>
+<div class="form">
+    <form id="form">
+        <label for="e-mail">Váš e-mail, kam  bude zaslána odpověď</label><br>
+        <input class="text" type="email" id="e-mail" name="e-mail"><br>
+        <label for="subject">S jakou částí aplikace máte problém?</label><br>
+        <input class="text" type="text" id="subject" name="subject"><br>
+        <label for="content">Popište Váš problém</label><br>
+        <textarea form="form" id="content" name="content"></textarea><br>
+        <input class="submit" type="submit" value="Odeslat">
+    </form>
+</div>
+<div>
+    <h1 id="faq">Časté dotazy</h1>
+    <h2>Potíže s instalací aplikace</h2>
+    <p><strong>Kde najdu instalační soubor aplikace?</strong></p>
+    <p>V záložce "Ke stažení" na odkaze "Instalační soubor".</p>
+    <p><strong>Instalační soubor jsem stáhl, ale nevím co s ním dál, jak na to?</strong></p>
+    <p>Poté co stáhnete instalační soubor .apk do svého zařízení, otevřete ho v aplikaci Správce souborů nebo<br>
+        jiné aplikaci na procházení souborů v zařízení a systém se sám zeptá zda chcete aplikaci nainstalovat.</p>
+    <p><strong>Zařízení mi nedovolí aplikaci nainstalovat, co s tím?</strong></p>
+    <p>Pravděpodobně máte vypnutou/zakázanou instalaci z neznámých zdrojů. Zařízení Android berou jako známý zdroj<br>
+        např. Obchod Play atd. Při povolení této možnosti bude možno instalovat aplikace do zařízení jakkoliv.</p>
+    <h2>Potíže s používáním aplikace</h2>
+    <p><strong>Aplikace nevidí moji polohu.</strong></p>
+    <p>Zde je více možností problému. Při zapnutí aplikace se zobrazí dotaz na povolení oprávnění.<br>
+    Pokud aplikace odepřete některé z nich, může se stát, že určení polohy nebude mít dostatek dat pro určení přesné polohy zařízení.<br>
+    Další možnost je chybějící připojení k internetu, to je potřeba ponechat aktivní pro přesné určení polohy.<br>
+    A nakonec samotná poloha zařízení, která může být vypnutá, tedy ani zařízení samo neví kde je.</p>
+    <p><strong>Po zhasnutí displeje aplikace přestane trasovat.</strong></p>
+    <p>Znovu se jedná o případ odepřených oprávnění aplikace, popř. může jít o nedostatečný výkon zařízení.</p>
+    <p><strong>Nevím kam se mi uložila trasa do zařízení.</strong></p>
+    <p>Trasa se uložila do vlastního alba "TrackApp", nicméně by se ale měla zobrazit i v galerii zařízení.</p>
+    <p><strong>Mám mapu plnou tras, které nechtějí zmizet. Jak je smažu?</strong></p>
+    <p>Pro "vyčištění" mapy použijte tlačítko "Smaž vše" v levém rohu spodního navigačního panelu.</p>
+</div>
+<div id="footer"></div>
+<footer>
+    <p class="footer">25.10.22</p>
+    <p class="footer">Studentský projekt</p>
+    <p class="footer">©2022, Matyáš Marek</p>
+    <p class="footer">marekma2@uhk.cz</p>
+</footer>
+</body>
+</html>
