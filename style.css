@@ -50,13 +50,23 @@ a.text{
     text-decoration: underline;
 }
 @media only screen and (min-width: 0px){
-    #footer{
-        height: 130px;
+    footer{
+        position: inherit;
+    }
+}
+@media only screen and (min-width: 413px){
+    footer{
+        position: inherit;
     }
 }
 @media only screen and (min-width: 655px){
     #footer{
         height: 65px;
+    }
+    footer{
+        position: fixed;
+        bottom: 10px;
+        left: 0.5%;
     }
 }
 footer{
@@ -65,9 +75,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: fixed;
-    bottom: 10px;
-    left: 0.5%;
     width: 99%;
 }
 p.footer{
