@@ -22,7 +22,7 @@
 <p>Pokud při používání naší aplikace narazíte na jakýkoliv problém a nenaleznete ho v <a class="text" href="#faq">častých dotazech</a>,<br>
     prosíme, sdělte nám ho, ať můžeme co nejdříve začít pracovat na jeho odstranění.</p>
 <div class="form">
-    <form id="form">
+    <form id="form" onsubmit="submitForm()">
         <label for="e-mail">Váš e-mail, kam  bude zaslána odpověď</label><br>
         <input class="text" type="email" id="e-mail" name="e-mail"><br>
         <label for="subject">S jakou částí aplikace máte problém?</label><br>
@@ -32,9 +32,9 @@
         <input class="submit" type="submit" value="Odeslat">
     </form>
     <script>
-        $("#submit").click(function() {
+        function submitForm() {
             alert("Formulář úspěšně odeslán.");
-        });
+        }
     </script>
 </div>
 <div>
